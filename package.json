@@ -1,0 +1,37 @@
+{
+  "name": "froject",
+  "version": "1.0.0",
+  "description": "Final Project - Elliott, Ray, Sarah, Zakk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SJROHRXD/Froject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SJROHRXD/Froject/issues"
+  },
+  "homepage": "https://github.com/SJROHRXD/Froject#readme",
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13",
+    "concurrently": "^5.3.0"
+  }
+}
